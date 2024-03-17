@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Short Circuit",
+  "version": "1.0.0",
+  "description": "A chrome extension to remove youtube shorts",
+  "permissions": ["scripting"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
